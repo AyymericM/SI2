@@ -1,0 +1,93 @@
+/* CAROUSEL */
+
+#carousel {
+    display: flex;
+    flex-direction: row;
+    width: 0;
+}
+
+.carouselOverlay {
+	position: absolute;
+	z-index: 1000;
+	top: 0;
+	left: 0;
+	height: 80vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.carouselTxt {
+	font-family: 'LettersForLearners', sans-serif;
+	font-size: 72px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.carouselBtns {
+	margin: 180px 0 100px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.carouselBtn {
+	text-decoration: none;
+	background-color: white;
+	margin: 0 25px;
+	outline: none;
+}
+
+.carouselBtn:nth-child(2) {
+	border-radius: 40px;
+	padding: 19px 50px;
+}
+
+.carouselBtn:first-child,
+.carouselBtn:last-child {
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+}
+
+.carouselBtn img {
+	width: 12px;
+	height: 12px;
+}
+
+.carouselBtn:first-child img {
+	transform: rotate(180deg)
+}
+
+.carouselBtn span {
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	color: black;
+	width: 12px;
+	height: 12px;
+}
+
+.carouselBtn:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.carousel_img {
+    transition: all 0.5s;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.buttons {
+    position: absolute;
+    z-index: 2000;
+}
