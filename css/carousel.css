@@ -20,7 +20,7 @@
 }
 
 .carouselTxt {
-	font-family: 'LettersForLearners', sans-serif;
+	font-family: 'LettersForLearners';
 	font-size: 72px;
 	color: white;
 	text-transform: uppercase;
@@ -84,7 +84,11 @@
     width: 100%;
     background-position: center;
     background-size: cover;
-    height: 80vh;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .buttons {

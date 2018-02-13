@@ -3,35 +3,118 @@
 <head>
 	<title>Semaine Intensive</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<section class="header">
-		<div class="carouselOverlay">
-			<div class="carouselTxt">Lorem ipsum</div>
-			<div class="carouselBtns">
-				<a href="#" id="btnLeft" class="carouselBtn">
-					<img src="img/icons/arrow.png" alt="Left">
+	<div class="navbar">
+		<div class="navbarContent">
+			<ul>
+				<li>
+					<a href="#">Collections</a>
+				</li>
+				<li>
+					<a href="#">À propos</a>
+				</li>
+				<li>
+					<a href="/">
+						<img src="img/icons/logo.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#">Mon compte</a>
+				</li>
+				<li>
+					<a href="#">Panier</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="homeContainer">
+		<section class="header">
+			<div class="carouselOverlay">
+				<div class="carouselBtns">
+					<a href="#" id="btnLeft" class="carouselBtn">
+						<img src="img/icons/arrow.png" alt="Left">
+					</a>
+					<a href="#" class="carouselBtn">
+						<span>Voir la collection</span>
+					</a>
+					<a href="#" id="btnRight" class="carouselBtn">
+						<img src="img/icons/arrow.png" alt="Right">
+					</a>
+				</div>
+			</div>
+			<div id="carousel">
+				<div style="background-image: url(img/carousel/0.jpg)" class="carousel_img">
+					<div class="carouselTxt">Aux pays des rêves</div>
+				</div>
+				<div style="background-image: url(img/carousel/1.jpg)" class="carousel_img">
+					<div class="carouselTxt">Mille Etoiles</div>
+				</div>
+				<div style="background-image: url(img/carousel/2.jpg)" class="carousel_img">
+					<div class="carouselTxt">Douce Brise</div>
+				</div>
+				<div style="background-image: url(img/carousel/3.jpg)" class="carousel_img">
+					<div class="carouselTxt">Balade en forêt</div>
+				</div>
+				<div style="background-image: url(img/carousel/4.jpg)" class="carousel_img">
+					<div class="carouselTxt">Bouton d'Or</div>
+				</div>
+				<div style="background-image: url(img/carousel/5.jpg)" class="carousel_img">
+					<div class="carouselTxt">Petit Moussaillon</div>
+				</div>
+			</div>
+		</section>
+		<section class="bodyContent" style="background-image: url(img/bgs/bg-0.jpg)">
+			<div class="container">
+				<h1 class="contentTitle">UNE FABRICATION ARTISANALE</h1>
+				<div class="contentText">
+					Découvrez l’histoire de notre collection d’habits et accessoires pour nourissons, élaborés et concus maison.
+				</div>
+				<a href="#" class="contentBtn">En savoir plus</a>
+			</div>
+		</section>
+		<section class="bodyContent right" style="background-image: url(img/bgs/bg-1.jpg)">
+			<div class="container right">
+				<h1 class="contentTitle">PROMOTION</h1>
+				<div class="contentText right">
+					Parainez une personne et obtenez tout les deux -5% sur votre première commande !
+				</div>
+				<a href="#" class="contentBtn">En savoir plus</a>
+			</div>
+		</section>
+		<section class="bodyContentMap" style="background-image: url(img/bgs/bg-2.jpg)">
+			<div class="container">
+				<h1 class="contentTitle">VENEZ ME RENCONTRER</h1>
+				<div class="contentText">
+					Visitez mon atelier afin découvrir comment sont fabriqués mes produits et obtenir des conseils !
+				</div>
+				<a href="https://goo.gl/maps/cKjdqi2yYFq" target="_blank" class="contentBtn">Itinéraire</a>
+			</div>
+		</section>
+		<section class="footer">
+			<a href="/" class="footerLink">
+				<img src="img/icons/logo_footer.png" alt="" class="imgFooter">
+			</a>
+			<div class="footerCopy">© DOUCEDEPO 2018 X HETIC P2022</div>
+			<div class="footerLinks">
+				<a href="https://www.facebook.com/doucedepo.officiel/" target="_blank" class="footerSocial">
+					<img src="img/icons/facebook_white.png" alt="Facebook" class="imgFooter">
 				</a>
-				<a href="#" class="carouselBtn">
-					<span>Voir la collection</span>
-				</a>
-				<a href="#" id="btnRight" class="carouselBtn">
-					<img src="img/icons/arrow.png" alt="Right">
+				<a href="https://www.instagram.com/pollennidoucedepo/" target="_blank" class="footerSocial">
+					<img src="img/icons/instagram_white.png" alt="Instagram" class="imgFooter">
 				</a>
 			</div>
-		</div>
-		<div id="carousel">
-			<div style="background-image: url(img/carousel/0.jpg)" class="carousel_img"></div>
-			<div style="background-image: url(img/carousel/1.jpg)" class="carousel_img"></div>
-			<div style="background-image: url(img/carousel/2.jpg)" class="carousel_img"></div>
-			<div style="background-image: url(img/carousel/3.jpg)" class="carousel_img"></div>
-			<div style="background-image: url(img/carousel/4.jpg)" class="carousel_img"></div>
-			<div style="background-image: url(img/carousel/5.jpg)" class="carousel_img"></div>
-		</div>
-	</section>
-	<script type="text/javascript" src="js/app.js"></script>
+			<div class="footerLinks">
+				<a href="#" class="footerLink">MENTIONS LÉGALES</a>
+				<a href="#" class="footerLink">CONDITIONS GÉNÉRALES DE VENTES</a>
+				<a href="#" class="footerLink">PORTFOLIO</a>
+			</div>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/home.js"></script>
 </body>
 </html>
