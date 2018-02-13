@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 @font-face {
 	font-family: 'LettersForLearners';
-	src: url('../fonts/LettersForLearners.ttf') format('ttf')
+	src: url('../fonts/LettersForLearners.ttf') format('truetype')
 }
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
 
 body, html {
     padding: 0;
@@ -67,7 +67,7 @@ body, html {
 }
 
 .navbarContent ul li a {
-    padding: 30px 50px;
+    padding: 30px 30px;
     color: #A48A7B;
     text-decoration: none;
 }

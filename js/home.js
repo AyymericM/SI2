@@ -7,11 +7,46 @@ let imgs = document.getElementsByClassName('carousel_img')
 let txt = document.getElementById('carouselTxt')
 let index = 0
 
-document.getElementById('carousel').style.width = `${100*imgs.length}vw`
+// CAROUSEL STUFF
+
+document.getElementById('carousel').style.width = `${100*imgs.length}vw`;
+
+(() => {
+    let container = document.getElementsByClassName('carouselBtns')[0]
+    if (index<=0) {
+        console.log('====================================');
+        console.log('1');
+        console.log('====================================');
+        btnLeft.style.visibility = 'hidden'
+        btnLeft.style.opacity = '0'
+        container.style.transform = 'translateX(-40px)'
+    } else if (index >= imgs.length*100-100) {
+        console.log('====================================');
+        console.log('2');
+        console.log('====================================');
+        btnRight.style.visibility = 'hidden'
+        btnRight.style.opacity = '0'
+        container.style.transform = 'translateX(40px)'
+    } else {
+        return
+    }
+})()
 
 btnRight.addEventListener('click', () => {
     if (index < imgs.length*100-100) {
+        btnLeft.style.visibility = 'visible'
+        btnLeft.style.opacity = '1'
         index += 100
+        let container = document.getElementsByClassName('carouselBtns')[0]
+        if (index >= imgs.length*100-100) {
+            btnRight.style.visibility = 'hidden'
+            btnRight.style.opacity = '0'
+            container.style.transform = 'translateX(40px)'
+        } else {
+            container.style.transform = 'translateX(0)'
+            btnRight.style.visibility = 'visible'
+            btnRight.style.opacity = '1'
+        }
         for (let i = 0; i < imgs.length; i++) {
             imgs[i].style.transform = `translateX(-${index}%)`
         }
@@ -20,12 +55,26 @@ btnRight.addEventListener('click', () => {
 
 btnLeft.addEventListener('click', () => {
     if (index > 0) {
+        btnRight.style.visibility = 'visible'
+        btnRight.style.opacity = '1'
         index -= 100
+        let container = document.getElementsByClassName('carouselBtns')[0]
+        if (index<=0) {
+            btnLeft.style.visibility = 'hidden'
+            btnLeft.style.opacity = '0'
+            container.style.transform = 'translateX(-40px)'
+        } else {
+            container.style.transform = 'translateX(0)'
+            btnLeft.style.visibility = 'visible'
+            btnLeft.style.opacity = '1'
+        }
         for (let i = 0; i < imgs.length; i++) {
             imgs[i].style.transform = `translateX(-${index}%)`
         }
     }
 })
+
+// NAVBAR TRANSFORMATION
 
 window.addEventListener('scroll', () => {
     if (page.scrollTop > header.clientHeight) {
