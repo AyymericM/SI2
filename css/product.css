@@ -1,1 +1,57 @@
 /*Product Style*/
+.productHolder{
+  display: flex;
+  flex-flow: row wrap;
+  width: 1400px;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 150px;
+}
+.productImg{
+  width: 670px;
+  height: 650px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.productTitle{
+  font-size: 50px;
+  font-family: 'LettersForLearners',sans-serif;
+  margin: 0;
+}
+.productPrice{
+    color: #DE8496;
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+.productText{
+  width: 700px;
+}
+.productNavbar{
+  margin-top: 25px;
+}
+.productNavbar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+.productNavbar ul li{
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: 'Poppins';
+}
+.productNavbar ul li a{
+  text-decoration: none;
+  padding: 50px 30px 30px 0px;
+  color: black;
+}
+p{
+  font-size: 16px;
+  font-family: 'Poppins';
+  padding-right: 20px;
+}
