@@ -57,3 +57,47 @@
     color: black;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1050px) {
+    .container > .right {
+        margin-left: 0;
+    }
+
+    .container {
+        margin: 0 30px;
+    }
+
+    .right {
+        text-align: left;
+    }
+
+	.contentTitle {
+		font-size: 36px;
+    }
+    
+    .contentText {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 20px 0 40px 0;
+    }
+    
+    .bodyContent {
+        height: 50vh;
+    }
+
+    .contentBtn {
+        padding: 14px 30px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .bodyContent {
+        height: 80vh;
+    }
+
+    .container {
+        margin: 0 20px;
+    }
+}

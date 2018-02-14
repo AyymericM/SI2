@@ -14,16 +14,10 @@ document.getElementById('carousel').style.width = `${100*imgs.length}vw`;
 (() => {
     let container = document.getElementsByClassName('carouselBtns')[0]
     if (index<=0) {
-        console.log('====================================');
-        console.log('1');
-        console.log('====================================');
         btnLeft.style.visibility = 'hidden'
         btnLeft.style.opacity = '0'
         container.style.transform = 'translateX(-40px)'
     } else if (index >= imgs.length*100-100) {
-        console.log('====================================');
-        console.log('2');
-        console.log('====================================');
         btnRight.style.visibility = 'hidden'
         btnRight.style.opacity = '0'
         container.style.transform = 'translateX(40px)'

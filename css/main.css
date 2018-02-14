@@ -28,18 +28,38 @@ body, html {
 }
 
 .navbarContent {
+    position: relative;
     height: 100%;
     background-color: white;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     max-width: 1127px;
     margin: 0 auto;
+    transition: all 0.2s;
 }
 
 .big {
     width: 100%;
     max-width: 100%;
     border-radius: 0;
+}
+
+.mobileLogo, .mobileMenu {
+    display: none;
+    position: absolute;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobileMenu {
+    right: 0;
+}
+
+.mobileLogo img, .mobileMenu img {
+    height: 30px;
+    width: auto;
+    padding: 10px 20px;
 }
 
 .navbarContent ul {
@@ -52,6 +72,10 @@ body, html {
     width: 100%;
     margin: 0 auto;
     padding: 0;
+}
+
+.mobileMenuOpen ul {
+    display: flex !important;
 }
 
 .navbarContent ul li {
@@ -97,6 +121,10 @@ body, html {
 }
 
 .footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
     margin-top: 20px;
     width: 100%;
 }
@@ -105,4 +133,55 @@ body, html {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .container {
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .navbar {
+        height: 60px;
+    }
+
+    .mobileLogo, .mobileMenu {
+        display: flex;
+    }
+    
+    .navbarContent {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+    }
+
+    .navbarContent ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        z-index: 2500;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 300px;
+        background-color: white;
+    }
+
+    .navbarContent ul li:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footerLink img {
+        width: 200px;
+        height: 200px;
+    }
+    .footerLinks:last-child {
+        flex-direction: column;
+    }
+
+    .footerLinks:last-child .footerLink {
+        margin: 5px 0;
+    }
 }
