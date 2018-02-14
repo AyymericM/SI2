@@ -18,12 +18,14 @@
   margin-bottom: 100px;
 }
 
- select {
-   background: transparent;
-   border: none;
-   font-size: 20px;
-   font-family: 'Poppins';
+select {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  font-family: 'Poppins';
   width: 70%;
+  outline: none;
+  margin-bottom: 30px;
 }
 option{
   font-size: 20px;
@@ -48,7 +50,7 @@ a{
 }
 
 .imgBlock{
-  border-radius: 15px;
+  border-radius: 25px;
   width: 100%;
   margin-top: 10px;
   overflow: hidden;

@@ -21,17 +21,20 @@
 
 .productDetailsContainer {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .productTitle {
     font-family: 'LettersForLearners';
-    font-size: 60px;
+    font-size: 42px;
     text-transform: uppercase;
 }
 
 .productPrice {
     font-family: 'Poppins', sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 600;
     color: #DE8496;
 }
@@ -41,7 +44,7 @@
     display: flex;
     flex-direction: row;
     width: 450px;
-    margin-top: 10px;
+    margin: 10px 0 30px 0;
     justify-content: space-between;
 }
 
@@ -49,7 +52,7 @@
     content: '';
     bottom: 0;
     position: absolute;
-    width: 100%;
+    width: 125%;
     height: 1px;
     background-color: rgba(0, 0, 0, 0.15)
 }
@@ -71,4 +74,89 @@
     width: 100%;
     height: 5px;
     background-color: #DE8496;
+}
+
+.productDetailsContent {
+    display: none;
+}
+
+.productDetailsContent > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+.activeDetails {
+    display: block;
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.optionContainer > select,
+.optionContainer > input {
+    outline: none;
+    padding: 4px 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Poppins';
+    width: 150px;
+    margin: 10px 0;
+}
+
+.optionContainer > input {
+    margin-left: 70px;
+}
+
+.optionTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+}
+
+.productActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.addBtn {
+    padding: 16px 60px;
+    background-color: #DE8496;
+    border-radius: 28px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.10);
+}
+
+.shareBtn {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    margin-left: 25px;
+    background-color: white;
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.10);
+    cursor: pointer;
+}
+
+.shareBtn img {
+    width: 25px;
+    height: 25px;
 }
