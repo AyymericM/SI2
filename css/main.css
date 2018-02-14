@@ -147,7 +147,7 @@ body, html {
     .mobileLogo, .mobileMenu {
         display: flex;
     }
-    
+
     .navbarContent {
         position: relative;
         width: 100%;
