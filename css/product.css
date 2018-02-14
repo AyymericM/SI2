@@ -10,9 +10,12 @@
 .productImgContainer {
     position: relative;
     width: 50%;
+    height: 460px;
 }
 
 .productImg {
+    position: absolute;
+    z-index: 400;
     border-radius: 25px;
     filter: brightness(0.7);
     width: 475px;
@@ -142,6 +145,10 @@
 }
 
 .shareBtn {
+    position: absolute;
+    z-index: 500;
+    bottom: -28px;
+    left: 30px;
     width: 56px;
     height: 56px;
     display: flex;
