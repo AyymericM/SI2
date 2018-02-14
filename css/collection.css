@@ -76,6 +76,21 @@ span{
 .divDecalage{
 	height: 20px;
 }
+.collectionType{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-bottom: 100px;
+}
+.collectionType a:active{
+	color: #DE8496;
+	font-weight: 600;
+}
+.collectionType a{
+	color : black;
+	font-size: 20px;
+	font-family: 'Poppins', sans-serif;
+}
 @media screen and (max-width: 1050px) {
 	.collectionHolder{
 	flex-flow: column ;
