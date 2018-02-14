@@ -27,6 +27,7 @@
 .allColumn {
     display:flex;
     flex-direction:row;
+    margin: 20px 0;
 }
 
 .subTitle{
@@ -40,6 +41,10 @@
     margin-bottom:10px;
 }
 
+.profilePic {
+    margin-bottom: 30px;
+}
+
 /*images column3-4*/
 
 .containerImage {
@@ -49,7 +54,6 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 300px;
     margin-bottom: 20px;
 }
 
@@ -65,7 +69,7 @@
 
 .textAbove {
     font-family: 'LettersForLearners';
-    font-size: 40px;
+    font-size: 32px;
     z-index: 1000;
     color: white;
 }
