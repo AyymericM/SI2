@@ -15,12 +15,15 @@
 }
 
 /* allColumn */
-
+.containerColumns{
+  display: flex;
+  flex-direction: row;
+}
 .subContainer {
     display:flex;
     flex-direction:column;
-    width:25%;
-    padding: 0 10px;
+    width:33%;
+    padding: 0 8px;
     box-sizing: border-box;
 }
 
@@ -66,10 +69,33 @@
     filter: brightness(0.7);
     border-radius: 30px;
 }
+.bigImage{
+	width: 100%;
+  overflow: hidden;
+  margin-bottom: 5px;
+  border-radius: 25px;
+}
+.smallContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.smallImage{
+  width: 23%;
+  overflow: hidden;
 
+}
+.img{
+	width: 100%;
+	filter: brightness(0.7);
+  border-radius: 5px;
+}
 .textAbove {
     font-family: 'LettersForLearners';
     font-size: 32px;
     z-index: 1000;
     color: white;
 }
+
+
