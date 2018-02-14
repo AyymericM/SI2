@@ -72,12 +72,12 @@ btnLeft.addEventListener('click', () => {
 
 window.addEventListener('scroll', () => {
     if (page.scrollTop > header.clientHeight) {
-        if (!navbar.classList.contains('big')) {
-            navbar.classList.add('big')
-        }
-    } else {
         if (navbar.classList.contains('big')) {
             navbar.classList.remove('big')
+        }
+    } else {
+        if (!navbar.classList.contains('big')) {
+            navbar.classList.add('big')
         }
     }
 })
