@@ -42,6 +42,7 @@
 	margin: 0;
 	outline: none;
 	transition: all 0.3s;
+	user-select: none;
 }
 
 .carouselBtn:nth-child(2) {

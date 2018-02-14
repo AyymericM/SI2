@@ -3,14 +3,20 @@
 <head>
 	<title>Page de collection</title>
 	<meta charset="utf-8">
-  <link rel="shortcut icon" href="img/icons/logo_simple.png">
+	<link rel="shortcut icon" href="img/icons/logo_simple.png">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" type="text/css" href="css/collection.css">
+	<link rel="stylesheet" type="text/css" href="css/collection.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="navbar">
 		<div class="navbarContent">
+			<a href="/" class="mobileLogo">
+				<img src="img/icons/logo.png" alt="">
+			</a>
+			<div class="mobileMenu">
+				<img src="img/icons/menu.png" alt="Menu">
+			</div>
 			<ul>
 				<li>
 					<a href="collection.html">Collections</a>
@@ -32,6 +38,42 @@
 			</ul>
 		</div>
 	</div>
+
+	<section class="collectionHolder">
+		<div class="colDisplay">
+			<h3 class="collectionTitle">COLLECTIONS</h3>
+				<span>TYPE DE PRODUIT:</span>
+				<select>
+					<option value="TOUS">TOUS</option>
+					<option value="AUXPAYS">AUX PAYS DES REVES</option>
+				</select>
+				<span>TRIER PAR:</span>
+				<select>
+					<option value="ORDRE">NOUVEAUTE</option>
+					<option value="CROISSANT">ORDRE CROISSANT</option>
+				</select>
+		</div>
+			<div class="colDisplay">
+				<span>MON TROUSSEAU</span>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/0.jpg" alt="collection" class="img"></a></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/1.jpg" alt="collection" class="img"></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/2.jpg" alt="collection" class="img"></div>
+			</div>
+			<div class="colDisplay">
+				<span class="spanDecalage">A CALINER</span>
+				<div class="divDecalage"></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Toudoux Lapinou</span><img src="img/products/example.jpg" alt="collection" class="img"></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/4.jpg" alt="collection" class="img"></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/10.jpg" alt="collection" class="img"></div>
+			</div>
+			<div class="colDisplay">
+				<span>MES ACCESSOIRES</span>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Panier à jouets</span><img src="img/products/6.jpg" alt="collection" class="img"></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/7.jpg" alt="collection" class="img"></div>
+				<div class="imgBlock"><a href="product.html"><span class="productDescription">Nom du produit</span><img src="img/products/8.jpg" alt="collection" class="img"></div>
+			</div>
+
+	</section>
 		<section class="footer">
 			<a href="#" class="footerLink">
 				<img src="img/icons/logo_footer.png" alt="" class="imgFooter">
@@ -52,6 +94,6 @@
 			</div>
 		</section>
 	</div>
-	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
