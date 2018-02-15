@@ -93,9 +93,8 @@ span{
 }
 @media screen and (max-width: 1050px) {
 	.collectionHolder{
-	flex-flow: column ;
-	max-width: 600px;
-
+		flex-flow: column;
+		max-width: 600px;
 	}
 	.colDisplay{
 		width: 100%;
@@ -106,18 +105,27 @@ span{
 	}
 	.imgBlock{
 		height: 350px;
-
+	}
+	.collectionTitle {
+		margin: 0;
+	}
+	.collectionType {
+		margin: 0 0 30px 0;
 	}
 }
 
 @media screen and (max-width: 700px) {
 	.collectionHolder{
-		flex-flow: column ;
+		flex-flow: column;
 		width: 500px;
+		padding: 0 10px;
 	}
 	.colDisplay{
-		margin-top: 50px;
+		margin-top: 0;
 		width: 100%;
 
+	}
+	.collectionTitle {
+		top: -100px;
 	}
 }
