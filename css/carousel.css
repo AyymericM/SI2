@@ -93,6 +93,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .buttons {
@@ -112,7 +113,7 @@
 
 	.carouselBtn:nth-child(2) {
 		border-radius: 35px;
-		padding: 10px 30px;
+		padding: 12px 30px;
 	}
 	
 	.carouselBtn:first-child,
