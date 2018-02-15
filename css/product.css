@@ -177,6 +177,28 @@
     height: 25px;
 }
 
+.productRateContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.productRate {
+    width: 30px;
+    height: 30px;
+    background-color: #DE8496;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.grayRate {
+    background-color: #A48A7B;
+}
+
 @media screen and (max-width: 1050px) {
     .productContainer {
         flex-direction: column;
