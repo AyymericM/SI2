@@ -68,6 +68,19 @@
 
 .bannerContainer > .container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.bannerContainer > .email {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.bannerContentContainer {
+    width: 100%;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -154,8 +167,17 @@
     .bannerContainer > .container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
+    }
+
+    .bannerContentContainer {
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .bannerBtn {
+        margin-top: 30px;
     }
 
     .bannerLeft, .bannerRight {
