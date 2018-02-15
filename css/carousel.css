@@ -19,10 +19,19 @@
 	justify-content: flex-end;
 }
 
-.carouselTxt {
+.carouselTxt, .carouselSubTxt {
 	font-family: 'LettersForLearners';
-	font-size: 72px;
 	color: white;
+}
+
+.carouselTxt {
+	font-size: 72px;
+	margin-bottom: 30px;
+}
+
+.carouselSubTxt {
+	max-width: 450px;
+	font-size: 32px;
 }
 
 .carouselBtns {
@@ -142,7 +151,7 @@
 
 	.carouselBtns {
 		width: 300px;
-		margin-bottom: 160px;
+		margin-bottom: 100px;
 	}
 
 	.carouselBtn:nth-child(2) {
@@ -165,5 +174,14 @@
 @media screen and (max-width: 700px) {
     .carousel_img, .carouselOverlay {
 		height: 100vh;
+	}
+
+	.carouselTxt {
+		font-size: 36px;
+	}
+
+	.carouselSubTxt {
+		font-size: 20px;
+		padding: 0 40px;
 	}
 }
