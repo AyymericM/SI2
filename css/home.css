@@ -70,7 +70,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .bannerRight {
@@ -93,7 +93,7 @@
 .bannerProducts {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .bannerProducts > img {
@@ -164,7 +164,7 @@
 
     .bannerRight {
         text-align: center;
-        margin-top: 50px;
+        margin-top: 25px;
     }
 
     .bannerTitle {
@@ -178,14 +178,29 @@
         font-size: 20px;
         color: white;
     }
+
+    .bannerNewsLetter {
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .bodyContent {
         height: 80vh;
     }
-
+    
     .container {
         margin: 0 20px;
+    }
+    
+    .bannerProducts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bannerNewsLetter {
+        padding: 18px 25px;
+        box-sizing: border-box;
+        width: 100%;
     }
 }
