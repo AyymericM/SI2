@@ -26,7 +26,15 @@
     padding: 0 8px;
     box-sizing: border-box;
 }
+.sideContainer{
+  width:50%;
+  box-sizing: border-box;
 
+}
+.divImg{
+  width: 100px;
+  margin: 0 auto;
+}
 .allColumn {
     display:flex;
     flex-direction:row;
@@ -36,6 +44,7 @@
 .subTitle{
     font-family: 'LettersForLearners';
     font-size: 30px;
+
 }
 
 .text {
@@ -43,9 +52,12 @@
     font-size: 15px;
     margin-bottom:10px;
 }
+.divImg{
 
+  width: 100%;
+}
 .profilePic {
-    margin-bottom: 30px;
+    width: 40%;
 }
 
 /*images column3-4*/
@@ -104,8 +116,11 @@
   .subContainer {
   width:50%;
   }
+  .sideContainer {
+  width:100%;
+  }
   .profilePic {
-      width: 80%;
+      width: 40%;
       height: auto;
   }
   .aboutContainer {
