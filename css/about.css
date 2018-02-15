@@ -98,7 +98,20 @@
     color: white;
 }
 @media screen and (max-width: 1050px) {
+  .allColumn {
+    flex-flow: wrap;
+  }
+  .subContainer {
+  width:50%;
+  }
+  .profilePic {
+      width: 80%;
+      height: auto;
+  }
+  .aboutContainer {
+      max-width:600px;
 
+  }
 }
 
 @media screen and (max-width: 700px) {
