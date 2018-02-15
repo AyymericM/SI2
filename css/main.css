@@ -38,12 +38,6 @@ body, html {
     border-radius: 0;
 }
 
-.big {
-    max-width: 1127px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
 .mobileLogo, .mobileMenu {
     display: none;
     position: absolute;

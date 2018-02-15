@@ -58,6 +58,51 @@
     text-decoration: none;
 }
 
+/* BANNER STYLES */
+
+.bannerContainer {
+    width: 100%;
+    padding: 35px 0;
+    background-color: #DE8496;
+}
+
+.bannerContainer > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannerRight {
+    text-align: right;
+}
+
+.bannerTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.bannerText {
+    font-family: 'LettersForLearners';
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.bannerProducts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bannerProducts > img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 15px 0 0;
+    border-radius: 20px;
+}
+
 @media screen and (max-width: 1050px) {
     .container > .right {
         margin-left: 0;
@@ -89,6 +134,34 @@
         padding: 14px 30px;
         font-size: 16px;
         font-weight: 300;
+    }
+    
+    .bannerContainer > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bannerLeft, .bannerRight {
+        width: 100%;
+    }
+
+    .bannerRight {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .bannerTitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 26px;
+        color: white;
+    }
+    
+    .bannerText {
+        font-family: 'LettersForLearners';
+        font-size: 20px;
+        color: white;
     }
 }
 

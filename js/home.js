@@ -1,6 +1,7 @@
 const page = document.getElementsByTagName('html')[0]
 const header = document.getElementsByClassName('header')[0]
 const navbar = document.getElementsByClassName('navbarContent')[0]
+const scrollIndicator = document.getElementById('scrollIndicator')
 const btnLeft = document.getElementById('btnLeft')
 const btnRight = document.getElementById('btnRight')
 let imgs = document.getElementsByClassName('carousel_img')
@@ -71,13 +72,13 @@ btnLeft.addEventListener('click', () => {
 // NAVBAR TRANSFORMATION
 
 window.addEventListener('scroll', () => {
-    if (page.scrollTop > header.clientHeight) {
-        if (navbar.classList.contains('big')) {
-            navbar.classList.remove('big')
+    if (page.scrollTop > 200) {
+        if (!scrollIndicator.classList.contains('hideScrollIndicator')) {
+            scrollIndicator.classList.add('hideScrollIndicator')
         }
     } else {
-        if (!navbar.classList.contains('big')) {
-            navbar.classList.add('big')
+        if (scrollIndicator.classList.contains('hideScrollIndicator')) {
+            scrollIndicator.classList.remove('hideScrollIndicator')
         }
     }
 })

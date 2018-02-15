@@ -134,15 +134,24 @@
     margin-top: 25px;
 }
 
-.addBtn {
+.addBtn, .persBtn {
     padding: 16px 60px;
-    background-color: #DE8496;
     border-radius: 28px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    color: white;
     cursor: pointer;
     box-shadow: 0px 6px 16px rgba(0,0,0,0.10);
+}
+
+.addBtn {
+    background-color: #DE8496;
+    color: white;
+}
+
+.persBtn {
+    background-color: white;
+    margin-left: 15px;
+    color: black;
 }
 
 .shareBtn {
@@ -221,12 +230,21 @@
         width: 95vw;
     }
 
+    .productActions {
+        flex-direction: column;
+    }
+
     .optionContainer,
-    .addBtn {
+    .addBtn, .persBtn {
         width: 100%;
     }
 
-    .addBtn {
+    .addBtn, .persBtn {
+        box-sizing: border-box;
+        margin: 5px 0;
+    }
+
+    .addBtn, .persBtn {
         text-align: center;
     }
 }
