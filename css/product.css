@@ -116,7 +116,7 @@
 }
 
 .optionContainer > input {
-    margin-left: 60px;
+    margin-left: 65px;
 }
 
 .optionTitle {
@@ -213,8 +213,14 @@
         font-size: 18px;
     }
 
-    .productTabs,
-    .productTabs::before,
+    .productTabs {
+        width: 350px;
+    }
+
+    .productTabs::before {
+        width: 95vw;
+    }
+
     .optionContainer,
     .addBtn {
         width: 100%;
@@ -225,7 +231,7 @@
     }
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 700px) {
     .productImgContainer, .productImg {
         height: 300px;
     }
