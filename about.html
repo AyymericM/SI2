@@ -12,14 +12,22 @@
 	<div class="navbar">
 		<div class="navbarContent">
 			<a href="/" class="mobileLogo">
-				<img src="img/icons/logo.png" alt="Doucedepo">
+				<img src="img/icons/logo.png" alt="">
 			</a>
 			<div class="mobileMenu">
 				<img src="img/icons/menu.png" alt="Menu">
 			</div>
 			<ul>
-				<li>
+				<li class="dropdownContainer">
 					<a href="collection.html">Collections</a>
+					<ul class="dropdown">
+						<li>Aux pays des rêves</li>
+						<li>Mille étoiles</li>
+						<li>Douce brise</li>
+						<li>Balade en forêt</li>
+						<li>Bouton d'or</li>
+						<li>Petit mousaillon</li>
+					</ul>
 				</li>
 				<li>
 					<a href="about.html">À propos</a>
@@ -34,6 +42,7 @@
 				</li>
 				<li>
 					<a href="#">Panier</a>
+					<span id="cartCount">0</span>
 				</li>
 			</ul>
 		</div>

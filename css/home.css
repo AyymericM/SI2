@@ -103,6 +103,21 @@
     border-radius: 20px;
 }
 
+.bannerNewsLetter {
+    padding: 18px 160px 18px 25px;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
+    background-color: #eb6b84;
+    border: none;
+    outline: none;
+}
+
+.bannerNewsLetter::placeholder {
+    color: white;
+    opacity: 0.8;
+}
+
 @media screen and (max-width: 1050px) {
     .container > .right {
         margin-left: 0;

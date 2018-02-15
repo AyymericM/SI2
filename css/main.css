@@ -38,6 +38,56 @@ body, html {
     border-radius: 0;
 }
 
+.navbarContent ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.navbarContent > ul > li {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    display: none !important;
+    top: 250px;
+    width: 100%;
+    list-style: none;
+    flex-direction: column !important;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dropdownContainer:hover > .dropdown {
+    display: flex !important;
+}
+
+.dropdown > li {
+    background-color: white;
+    padding: 25px 14px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+#cartCount {
+    position: absolute;
+    padding: 5px 8px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    top: -70%;
+    right: 5px;
+    border-radius: 15px;
+}
+
 .mobileLogo, .mobileMenu {
     display: none;
     position: absolute;
@@ -56,20 +106,12 @@ body, html {
     padding: 10px 20px;
 }
 
-.navbarContent ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-}
-
 .mobileMenuOpen ul {
     display: flex !important;
+}
+
+.mobileMenuOpen > ul > .dropdownContainer > .dropdown {
+    display: none !important;
 }
 
 .navbarContent ul li {
@@ -85,7 +127,7 @@ body, html {
 }
 
 .navbarContent ul li a {
-    padding: 30px 30px;
+    padding: 35px 30px;
     color: #A48A7B;
     text-decoration: none;
 }

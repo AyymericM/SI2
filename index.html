@@ -20,8 +20,16 @@
 				<img src="img/icons/menu.png" alt="Menu">
 			</div>
 			<ul>
-				<li>
+				<li class="dropdownContainer">
 					<a href="collection.html">Collections</a>
+					<ul class="dropdown">
+						<li>Aux pays des rêves</li>
+						<li>Mille étoiles</li>
+						<li>Douce brise</li>
+						<li>Balade en forêt</li>
+						<li>Bouton d'or</li>
+						<li>Petit mousaillon</li>
+					</ul>
 				</li>
 				<li>
 					<a href="about.html">À propos</a>
@@ -36,6 +44,7 @@
 				</li>
 				<li>
 					<a href="#">Panier</a>
+					<span id="cartCount">0</span>
 				</li>
 			</ul>
 		</div>
@@ -105,6 +114,17 @@
 				<a href="about.html" class="contentBtn">En savoir plus</a>
 			</div>
 		</section>
+		<section class="bannerContainer">
+			<div class="container">
+				<div class="bannerLeft">
+						<div class="bannerTitle">Abonnez vous à notre newsletter !</div>
+						<input type="email" class="bannerNewsLetter" name="email" placeholder="Votre addresse mail">
+					</div>
+					<div class="bannerRight">
+						<div class="contentBtn">S'inscrire</div>
+					</div>
+				</div>
+			</section>
 		<section class="bodyContent right" style="background-image: url(img/bgs/bg-1.jpg)">
 			<div class="container right">
 				<h1 class="contentTitle">Promotion</h1>
