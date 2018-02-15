@@ -117,7 +117,9 @@ span{
 @media screen and (max-width: 700px) {
 	.collectionHolder{
 		flex-flow: column;
-		width: 500px;
+		width: 100%;
+		box-sizing: border-box;
+
 		padding: 0 10px;
 	}
 	.colDisplay{
@@ -126,6 +128,9 @@ span{
 
 	}
 	.collectionTitle {
-		top: -100px;
+		top: -150px;
+	}
+	.imgBlock{
+		height: 300px;
 	}
 }
